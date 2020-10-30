@@ -23,13 +23,12 @@ public class Point{
 
     public double distanceTo(Point other){
         return (double)
-        (Math.round(Math.sqrt(
-            Math.pow(x - other.x, 2) 
-            +
-            Math.pow(y - other.y, 2)    
+        (
+            Math.sqrt(
+                Math.pow(x - other.x, 2) +
+                Math.pow(y - other.y, 2)    
                     ) 
-            * 10000.0)
-            /10000.0);
+                );
     }
 
     public boolean equals( Point other) {
