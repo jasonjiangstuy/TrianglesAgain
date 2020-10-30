@@ -31,5 +31,9 @@ public class Point{
             * 10000.0)
             /10000.0);
     }
+
+    public boolean equals( Point other) {
+        return (x == other.x && y == other.y);
+     }
     
 }
